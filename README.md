@@ -1,1 +1,0 @@
-https://Julia-Kopichenko.github.io/rsschool-cv/cv
