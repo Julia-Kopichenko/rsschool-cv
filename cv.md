@@ -61,3 +61,8 @@ Course basic knowledge of  HTML, CSS, JavaScript, React)
     Course basic knowledge of  HTML, CSS, JavaScript, React)
 
 ***
+## English:
+
+Pre-Intermediate
+
+***
