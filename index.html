@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./iconstyles.css">
-  <title>Julia Kopichenko-Junior Front-End Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/mono-blue.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./iconstyles.css">
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <title>Julia Kopichenko-Junior Front-End Developer</title>
 </head>
 <body>
     <div  class="wrapper" id="root">
         <div class="triangle"></div>
         <header class="header">
+            <nav class="header__navigation">
+                <ul class="header-navigation">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#educations">Educations</a>
+                    </li>
+                    <!-- <li class="navigation__item">
+                        <a class="navigation__link" href="#courses">Courses</a>
+                    </li> -->
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#skills">Skills</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#my-projects">My projects</a>
+                    </li>
+                    <!-- <li class="navigation__item">
+                        <a class="navigation__link" href="#hobbies">Hobbies</a>
+                    </li> -->
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
             <ul class="contact-links__wrapper">
                 <li class="contact-links__item">
                     <a class="icon icon-github" href="https://github.com/Julia-Kopichenko" target="_blank" title="github"
@@ -32,17 +60,23 @@
             </ul>
         </header>
         <main>
-            <section class="about-me about-me__wrapper">
+            <section class="about-me">
                 <h1 class="visually-hidden">Resume Julia Kopichenko-Junior Front-End Developer</h1>
-                <div class="about-me__photo-container">
-                    <div class="circle-line circle-line__left"></div>
-                    <div class="circle-line circle-line__right"></div>
-                    <img class="about-me__photo" src="./img/my_photo.jpg" alt="Personal photo">
+                <div class="about-me__wrapper">
+                    <div class="about-me__photo-container">
+                        <div class="circle-line circle-line__left"></div>
+                        <div class="circle-line circle-line__right"></div>
+                        <img class="about-me__photo" src="./img/my_photo.jpg" alt="Personal photo">
+                    </div>
+                    <div class="about-me__greeting-container greeting-container">
+                        <h2 class="about-me__title">Julia Kopichenko</h2>
+                        <p class="about-me__subtitle">Junior Front-End Developer</p>
+                        <p class="about-me__subtitle-small">...almost ;)</p>
+                    </div>
+
+
                 </div>
-                <div class="about-me__greeting-container greeting-container">
-                    <h2 class="about-me__title">Julia Kopichenko</h2>
-                    <p class="about-me__subtitle">Junior Front-End Developer</p>
-                    <p class="about-me__subtitle-small">...almost ;)</p>
+                <div>
                     <p class="about-me__title">HELLO!</p>
                     <p>🌱 I am interested in Frontend development about 6 months ago.
                     </p>
@@ -53,10 +87,11 @@
                     <p>💖 I’m sociable person, good team player. I have good organizational skills. I can solve conflicts and compromise.
                     </p>
                 </div>
+
             </section>
             <div class="two-columns">
                 <div class="two-columns--left">
-                    <section class="education education__wrapper">
+                    <section id="educations" class="education__wrapper">
                         <div class="title__wrapper">
                             <div class="title-wrapper__triangle triangle--pink"></div>
                             <h2 class="title__text title-h2">EDUCATIONS</h2>
@@ -72,7 +107,7 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="courses education__wrapper">
+                    <section id="courses" class="education__wrapper">
                         <div class="title__wrapper">
                             <div class="title-wrapper__triangle triangle--blue"></div>
                             <h2 class="title__text title-h2">COURSES</h2>
@@ -96,45 +131,32 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="my-projects">
+                    <section class="code-example">
+                        <div class="title__wrapper">
+                            <div class="title-wrapper__triangle triangle--blue"></div>
+                            <h2 class="title__text title-h2">CODE EXAMPLE</h2>
+                        </div>
+                        <p>"You are given an odd-length array of integers, in which all of them are the same, except for one single number. Complete the method which accepts such an array, and returns that single different number."</p>
+                        <pre><code class="language-javascript">
+function stray(numbers) {
+    numbers.sort(function(a, b) { return a - b; });
+    return (numbers[0] === numbers[1]) ? numbers[numbers.length - 1] : numbers[0];
+}
+                            </code></pre>
+                    </section>
+                    <section id="my-video">
                         <div class="title__wrapper">
                             <div class="title-wrapper__triangle triangle--pink"></div>
-                            <h2 class="title__text title-h2">My recent projects</h2>
+                            <h2 class="title__text title-h2">MY VIDEO</h2>
                         </div>
-                        <ul class="my-projects__list">
-                            <li class="my-projects__item">
-                              <span class="skills-item__text title-h3">HTML,CSS</span>
-                              <a href="https://help-animal.netlify.app/#home-section" target="_blank" title="help-animal">
-                                <img class="project-img" src="./img/project1.PNG" alt="help-animal">
-                              </a>
-                              <a href="https://rolling-scopes-school.github.io/julia-kopichenko-JSFEPRESCHOOL/museum/#" target="_blank" title="louvre">
-                                <img class="project-img" src="./img/project4.PNG" alt="louvre">
-                              </a>
-                            </li>
-                            <li class="my-projects__item">
-                              <span class="skills-item__text title-h3">Vanilla JavaScript</span>
-                              <a href="https://musing-liskov-c85126.netlify.app/?#" target="_blank" title="TODO?Vanilla JS">
-                                <img class="project-img" src="./img/project2.PNG" alt="help-animal">
-                              </a>
-                              <a href="https://film-gallery-from-julia.netlify.app/index.html" target="_blank" title="Film gallery">
-                                <img class="project-img" src="./img/project3.PNG" alt="help-animal">
-                              </a>
-                            </li>
-                            <!-- <li class="my-projects__item">
-                              <span class="skills-item__text title-h3">React</span>
-                              <a href="https://todo-react-app-julia.netlify.app/" target="_blank" title="TODO/REACT">
-                                <img class="project-img" src="./img/project5.PNG" alt="help-animal">
-                              </a>
-                            </li> -->
-                        </ul>
-                    </section>
 
+                    </section>
                 </div>
                 <div class="two-columns--right">
-                    <section class="skills skills__wrapper">
+                    <section id="skills" class="skills__wrapper">
                         <div class="title__wrapper">
                             <div class="title-wrapper__triangle triangle--pink"></div>
-                            <h2 class="title__text title-h2">SKILLS</h2>
+                            <h2 class="title__text title-h2">HARD SKILLS</h2>
                         </div>
                         <ul class="skills__list">
                             <li class="skills__item skills__item--html">
@@ -179,6 +201,14 @@
                                     <span></span>
                                 </div>
                             </li>
+                        </ul>
+                    </section>
+                    <section class="skills__wrapper">
+                        <div class="title__wrapper">
+                            <div class="title-wrapper__triangle triangle--pink"></div>
+                            <h2 class="title__text title-h2">LANGUAGES</h2>
+                        </div>
+                        <ul class="skills__list">
                             <li class="skills__item skills__item--english">
                                 <span class="skills-item__text title-h3">English (B1)</span>
                                 <div class="skills-item__progress progress">
@@ -188,7 +218,50 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="hobbies">
+                    <section id="my-projects">
+                        <div class="title__wrapper">
+                            <div class="title-wrapper__triangle triangle--pink"></div>
+                            <h2 class="title__text title-h2">MY PROJECTS</h2>
+                        </div>
+                        <ul class="my-projects__list">
+                            <li class="my-projects__item">
+                              <span class="skills-item__text title-h3">HTML, <pre></pre> CSS</span>
+                                <a href="https://help-animal.netlify.app/#home-section" target="_blank" title="help-animal">
+                                    <img class="project-img"
+                                        src="./img/help.jpg"
+                                        width="150px" height="150px" alt="help-animal">
+                                </a>
+                                <a href="https://rolling-scopes-school.github.io/julia-kopichenko-JSFEPRESCHOOL/museum/#" target="_blank" title="louvre">
+                                <img class="project-img"
+                                    src="./img/louvre.jpg"
+                                    width="150px" height="150px"
+                                    alt="louvre">
+                                </a>
+                            </li>
+                            <li class="my-projects__item">
+                              <span class="skills-item__text title-h3">Vanilla JS</span>
+                              <a href="https://musing-liskov-c85126.netlify.app/?#" target="_blank" title="TODO">
+                                <img class="project-img"
+                                    src="./img/todo.jpg"
+                                    width="150px" height="150px"
+                                    alt="help-animal">
+                              </a>
+                              <a href="https://film-gallery-from-julia.netlify.app/index.html" target="_blank" title="Film gallery">
+                                <img class="project-img"
+                                    src="./img/galary.jpg"
+                                    width="150px" height="150px"
+                                    alt="help-animal">
+                              </a>
+                            </li>
+                            <!-- <li class="my-projects__item">
+                              <span class="skills-item__text title-h3">React</span>
+                              <a href="https://todo-react-app-julia.netlify.app/" target="_blank" title="TODO/REACT">
+                                <img class="project-img" src="./img/project5.PNG" alt="help-animal">
+                              </a>
+                            </li> -->
+                        </ul>
+                    </section>
+                    <section id="hobbies">
                       <div class="title__wrapper">
                         <div class="title-wrapper__triangle triangle--blue"></div>
                         <h2 class="title__text title-h2">HOBBIES</h2>
@@ -201,8 +274,8 @@
                         <li class="hobbies__item icon icon-bike">
                         </li>
                       </ul>
-                  </section>
-                    <section class="contacts contacts__wrapper">
+                    </section>
+                    <section id="contacts" class="contacts__wrapper">
                         <div class="title__wrapper">
                             <div class="title-wrapper__triangle triangle--blue"></div>
                             <h2 class="title__text title-h2">CONTACTS</h2>
@@ -239,7 +312,7 @@
             <div class="footer__contact-lincs">
                 <ul class="contact-lincs__list">
                     <li class="contact-lincs__item">
-                        <a class="icon icon-github" href="https://github.com/Julia-Kopichenko" target="_blank" title="github"    >
+                        <a class="icon icon-github" href="https://github.com/Julia-Kopichenko" target="_blank" title="github"><span>Julia-Kopichenko</span>
                         </a>
                     </li>
                     <li class="contact-lincs__item">
