@@ -68,7 +68,6 @@ table {
   --width-photo:37rem;
   --width-project-photo:12rem;
 
-
   --icons-height: 3.2rem;
 
   --color-dark-blue: rgba(69, 75, 115, 1);
@@ -138,12 +137,12 @@ body.lock {
   color: var(--color-dark-blue);
   text-shadow: 2px 2px var(--color-shadow);
 }
-.title-h2{
+.title-h3 {
   font-size: var(--font-size-big);
   line-height:var(--font-size-big);
   text-shadow: 3px 3px var(--color-shadow);
 }
-.title-h3 {
+.title-h4 {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-medium);
   text-shadow: 1px 1px var(--color-shadow);
@@ -210,7 +209,7 @@ body.lock {
 .menu__link {
   font-size: var(--font-size-medium);
   color: var(--color-dark-blue);
-  text-shadow: 3px 3px var(--color-shadow);
+  /* text-shadow: 3px 3px var(--color-shadow); */
 }
 .menu__link:hover, .menu__link:active {
   /* color: white;
@@ -423,7 +422,10 @@ section { margin-bottom: var(--margin-bottom-big); }
 .footer__contact-lincs .icon-github::before {
   margin-right: 1rem;
 }
-.logo-school { fill: blueviolet; }
+.logo-school {
+  width: 80px;
+  fill: blueviolet;
+}
 
 @media screen and (max-width: 767px) {
   :root {
