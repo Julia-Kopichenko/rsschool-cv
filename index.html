@@ -6,78 +6,89 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/mono-blue.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./iconstyles.css">
-
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-
     <title>Julia Kopichenko-Junior Front-End Developer</title>
 </head>
 <body>
     <div  class="wrapper" id="root">
         <div class="triangle"></div>
         <header class="header">
-            <nav class="header__navigation">
-                <ul class="header-navigation">
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#educations">Educations</a>
-                    </li>
-                    <!-- <li class="navigation__item">
-                        <a class="navigation__link" href="#courses">Courses</a>
-                    </li> -->
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#skills">Skills</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#my-projects">My projects</a>
-                    </li>
-                    <!-- <li class="navigation__item">
-                        <a class="navigation__link" href="#hobbies">Hobbies</a>
-                    </li> -->
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="contact-links__wrapper">
-                <li class="contact-links__item">
-                    <a class="icon icon-github" href="https://github.com/Julia-Kopichenko" target="_blank" title="github"
-                    >
-                    </a>
-                </li>
-                <li class="contact-links__item">
-                    <a class="icon icon-mail_ru" href="mailto:j.titorenko@gmail.com" target="_blank" title="gmail">
-                    </a>
-                </li>
-                <li class="contact-links__item">
-                    <a class="icon icon-telegram" href="tg://resolve?domain=Julia_Kopichenko" target="_blank" title="telegram">
-                    </a>
-                </li>
-                <li class="contact-links__item">
-                    <a class="icon icon-linkedIn" href="#" target="_blank" title="LinkedIN">
-                    </a>
-                </li>
-            </ul>
+            <div class="header__container">
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li>
+                                <a data-goto="#educations" class="menu__link" href="#">Educations</a>
+                            </li>
+                            <li>
+                                <a data-goto="#skills" class="menu__link" href="#">Skills</a>
+                            </li>
+                            <li>
+                                <a data-goto="#my-projects" class="menu__link" href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a data-goto="#contacts" class="menu__link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__contacts contacts">
+                    <ul class="contacts__list">
+                        <li>
+                            <a class="contacts__link icon icon-github"
+                                href="https://github.com/Julia-Kopichenko"
+                                target="_blank"
+                                title="github">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contacts__link icon icon-mail_ru"
+                            href="mailto:j.titorenko@gmail.com"
+                            target="_blank"
+                            title="gmail">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contacts__link icon icon-telegram"
+                            href="tg://resolve?domain=Julia_Kopichenko"
+                            target="_blank"
+                            title="telegram">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contacts__link icon icon-linkedIn"
+                            href="#"
+                            target="_blank"
+                            title="LinkedIN">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <main>
+        <main class="main">
             <section class="about-me">
                 <h1 class="visually-hidden">Resume Julia Kopichenko-Junior Front-End Developer</h1>
                 <div class="about-me__wrapper">
-                    <div class="about-me__photo-container">
-                        <div class="circle-line circle-line__left"></div>
-                        <div class="circle-line circle-line__right"></div>
-                        <img class="about-me__photo" src="./img/my_photo.jpg" alt="Personal photo">
+                    <div class="about-me__photo-container photo-container">
+                        <div class="photo-container__circle-line photo-container__circle-line--left"></div>
+                        <div class="photo-container__circle-line photo-container__circle-line--right"></div>
+                        <img class="photo-container__photo my-photo"
+                            src="./img/my_photo.jpg"
+                            alt="Personal photo">
                     </div>
-                    <div class="about-me__greeting-container greeting-container">
-                        <h2 class="about-me__title">Julia Kopichenko</h2>
-                        <p class="about-me__subtitle">Junior Front-End Developer</p>
-                        <p class="about-me__subtitle-small">...almost ;)</p>
+                    <div class="about-me__name name-container">
+                        <h2 class="name-container__title superbig-title">Julia Kopichenko</h2>
+                        <p class="name-container__subtitle big-title">Junior Front-End Developer</p>
+                        <p class="name-container__subtitle--small">...almost ;)</p>
                     </div>
-
-
                 </div>
-                <div>
-                    <p class="about-me__title">HELLO!</p>
+                <div class="about-me__greeting-container greeting-container">
+                    <p class="greeting-container__title superbig-title">HELLO!</p>
                     <p>🌱 I am interested in Frontend development about 6 months ago.
                     </p>
                     <p>✍ During this time I attended a course from one of the company.
@@ -87,7 +98,6 @@
                     <p>💖 I’m sociable person, good team player. I have good organizational skills. I can solve conflicts and compromise.
                     </p>
                 </div>
-
             </section>
             <div class="two-columns">
                 <div class="two-columns--left">
@@ -267,11 +277,11 @@ function stray(numbers) {
                         <h2 class="title__text title-h2">HOBBIES</h2>
                       </div>
                       <ul class="hobbies__list">
-                        <li class="hobbies__item icon icon-travel"></li>
-                        <li class="hobbies__item icon icon-listening"></li>
-                        <li class="hobbies__item icon icon-hiking"></li>
-                        <li class="hobbies__item icon icon-guitar"></li>
-                        <li class="hobbies__item icon icon-bike">
+                        <li class="hobbies__item icon-travel"></li>
+                        <li class="hobbies__item icon-listening"></li>
+                        <li class="hobbies__item icon-hiking"></li>
+                        <li class="hobbies__item icon-guitar"></li>
+                        <li class="hobbies__item icon-bike">
                         </li>
                       </ul>
                     </section>
@@ -280,9 +290,9 @@ function stray(numbers) {
                             <div class="title-wrapper__triangle triangle--blue"></div>
                             <h2 class="title__text title-h2">CONTACTS</h2>
                         </div>
-                        <ul class="contacts__list">
+                        <ul class="contacts__list-wrapper">
                             <li class="contacts__item">
-                                <div class="icon icon-world">                       </div>
+                                <div class="icon icon-world"></div>
                                 <p>Gomel, Belarus</p>
                             </li>
                             <li class="contacts__item">
@@ -324,5 +334,6 @@ function stray(numbers) {
             </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
