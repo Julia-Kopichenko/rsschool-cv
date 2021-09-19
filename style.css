@@ -127,7 +127,7 @@ body.lock { overflow: hidden; }
 .superbig-title {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-superbig);
-  text-shadow: 4px 4px var(--color-shadow);
+  text-shadow: 3px 3px var(--color-shadow);
 }
 .big-title {
   font-size: var(--font-size-big);
@@ -137,7 +137,7 @@ body.lock { overflow: hidden; }
 .title-h3 {
   font-size: var(--font-size-big);
   line-height:var(--font-size-big);
-  text-shadow: 3px 3px var(--color-shadow);
+  text-shadow: 2px 2px var(--color-shadow);
 }
 .title-h4 {
   font-weight: var(--font-weight-bold);
@@ -202,6 +202,9 @@ body.lock { overflow: hidden; }
 }
 .menu__link:hover, .menu__link:active {
   text-decoration: underline;
+}
+.contacts-link--second {
+  display: none;
 }
 .header__contacts {
   z-index: 5; /*чтобы было выше плашки*/
@@ -317,7 +320,6 @@ section { margin-bottom: var(--margin-bottom-big); }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: var(--margin-bottom-normal);
 }
 .education-item__title .title-h4 {
@@ -348,6 +350,10 @@ section { margin-bottom: var(--margin-bottom-big); }
 .my-projects__item:first-of-type {
   margin-right: 2rem;
 }
+.my-projects__item a {
+  display: flex;
+  align-items: center;
+}
 .my-projects__description {
   display: flex;
   align-items: center;
@@ -371,7 +377,9 @@ section { margin-bottom: var(--margin-bottom-big); }
 .hljs {
   background-color: var(--color-lite-blue);
   color: var(--color-dark-blue);
-  font-size: 1.32rem;
+  font-size: 1.2rem;
+  box-shadow: 5px 5px 20px -1px rgb(0 0 0 / 23%);
+  padding: 0 0 0 22%;
 }
 /**--------------------CODE EXAMPLE END------------*/
 /**--------------------HOBBIES START------------*/
@@ -454,7 +462,7 @@ section { margin-bottom: var(--margin-bottom-big); }
     padding: 10px 0;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .education-item__title {
     flex-direction: column;
     align-items: flex-start;
@@ -545,12 +553,15 @@ section { margin-bottom: var(--margin-bottom-big); }
   .my-projects__list { flex-direction: column; }
   .my-projects__item { width: 100%; }
   .my-projects__description { height: 16rem; }
+  .hljs { padding-left: 5%; }
 }
 @media screen and (max-width: 630px) {
   .two-columns { flex-direction: column; }
   .two-columns--left { width: 100%; }
   .two-columns--right { width: 100%; }
   .education-item__title { flex-direction: row; }
+  .contacts-link--second { display: block; }
+  .contacts-link { display: none; }
   #contacts-second {
     display: block;
   }

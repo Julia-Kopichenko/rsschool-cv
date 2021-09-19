@@ -34,8 +34,11 @@
                                 <li>
                                     <a data-goto="#hobbies" class="menu__link" href="#">Hobbies</a>
                                 </li>
-                                <li>
+                                <li class="contacts-link">
                                     <a data-goto="#contacts" class="menu__link" href="#">Contacts</a>
+                                </li>
+                                <li class="contacts-link--second">
+                                    <a data-goto="#contacts-second" class="menu__link" href="#">Hobbies</a>
                                 </li>
                             </ul>
                         </nav>
@@ -150,12 +153,11 @@
                                 <div class="title-wrapper__triangle triangle--pink"></div>
                                 <h3 class="title__text title-h3">CODE EXAMPLE</h3>
                             </div>
-                            <p>"You are given an odd-length array of integers, in which all of them are the same, except for one single number. Complete the method which accepts such an array, and returns that single different number."</p>
+                            <p>"Your task is to order a list containg people objects by age using the new Javascript Arrow Functions. Input will be a valid array with People objects containing an Age and Name. Output will be a valid sorted array with People objects sorted by Age in ascending order"</p>
                             <pre><code class="language-javascript">
-    function stray(numbers) {
-        numbers.sort(function(a, b) { return a - b; });
-        return (numbers[0] === numbers[1]) ? numbers[numbers.length - 1] : numbers[0];
-    }
+let OrderPeople = function(people) {
+    return people.sort((a, b) => a.age - b.age);
+}
                                 </code></pre>
                         </section>
                     </div>
