@@ -552,7 +552,7 @@ section { margin-bottom: var(--margin-bottom-big); }
   .about-me__wrapper { flex-direction: column; }
   .my-projects__list { flex-direction: column; }
   .my-projects__item { width: 100%; }
-  .my-projects__description { height: 16rem; }
+  .my-projects__description { height: 17rem; }
   .hljs { padding-left: 5%; }
 }
 @media screen and (max-width: 630px) {
