@@ -120,6 +120,9 @@ body.lock { overflow: hidden; }
   overflow: hidden;
   box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%);
 }
+.content-wrapper  {
+  padding: 1rem 3rem;
+}
 /**----------------TITLES--------------*/
 .superbig-title {
   font-weight: var(--font-weight-bold);
@@ -184,7 +187,6 @@ body.lock { overflow: hidden; }
 }
 .header__container {
   position: relative;
-  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,11 +274,13 @@ main .about-me { margin-bottom: var(--margin-bottom-normal); }
 /**--------------------TWO-COLUMNS START------------*/
 .two-columns {
   display: flex;
-  padding: 1rem 3rem;
 }
 .two-columns--left {
   width: 55%;
   margin-right: 2rem;
+}
+.two-columns--right {
+  width: 45%;
 }
 
 section { margin-bottom: var(--margin-bottom-big); }
@@ -287,7 +291,7 @@ section { margin-bottom: var(--margin-bottom-big); }
   align-items: center;
 }
 .skills-item__text {
-  flex-basis:50%;
+  text-align: center;
   margin-right: var(--margin-right-left);
 }
 .progress {
@@ -325,16 +329,32 @@ section { margin-bottom: var(--margin-bottom-big); }
 }
 /**--------------------EDUCATIONS END------------*/
 /**--------------------PROJECTS START------------*/
+.my-projects__technologies {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.my-projects__list {
+  display: flex;
+}
 .my-projects__item {
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid var(--color-lite-blue);
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
 }
-.my-projects__item:not(:last-of-type) {
-  margin-bottom: 2rem;
-}
-.my-projects__item a:not(:last-of-type) {
+.my-projects__item:first-of-type {
   margin-right: 2rem;
+}
+.my-projects__description {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  max-width: 60%;
+  height: 18rem;
+  overflow: auto;
 }
 .project-img {
   max-width: 100%;
@@ -367,6 +387,9 @@ section { margin-bottom: var(--margin-bottom-big); }
 }
 /**--------------------HOBBIES END------------*/
 /**--------------------CONTACTS START------------*/
+#contacts-second {
+  display: none;
+}
 .contacts__list-wrapper {
   max-width: 100%;
 }
@@ -445,6 +468,7 @@ section { margin-bottom: var(--margin-bottom-big); }
     left: 0;
     z-index: 10;
     width: 100%;
+    padding: 0 2rem;
   }
   .main {
     padding-top: 11rem;
@@ -518,11 +542,21 @@ section { margin-bottom: var(--margin-bottom-big); }
     margin-bottom: var(--margin-bottom-normal);
   }
   .about-me__wrapper { flex-direction: column; }
+  .my-projects__list { flex-direction: column; }
+  .my-projects__item { width: 100%; }
+  .my-projects__description { height: 16rem; }
 }
 @media screen and (max-width: 630px) {
   .two-columns { flex-direction: column; }
   .two-columns--left { width: 100%; }
+  .two-columns--right { width: 100%; }
   .education-item__title { flex-direction: row; }
+  #contacts-second {
+    display: block;
+  }
+  #contacts {
+    display: none;
+  }
 }
 @media screen and (max-width: 420px) {
   :root {
@@ -535,7 +569,7 @@ section { margin-bottom: var(--margin-bottom-big); }
     --margin-bottom-normal: 1.5rem;
     --height-title-border: 3.5rem;
   }
-  .two-columns {padding: 1rem 2rem;}
+  .content-wrapper {padding: 1rem 2rem;}
   .footer__wrapper { padding: 1rem 2rem; }
   .two-columns--left section,
   .two-columns--right section { margin-bottom: 15px; }
