@@ -15,3 +15,32 @@ I am extremely motivated for career change goal. Now I'm planning to get deeper 
 I'm sociable person, good team player I have good organizational skills. I can solve conflicts and compromise.
 
 ***
+
+## Skills:
+- I have a general understanding of programming languages and software development process;
+- Basic knowledge of web technologies (HTML, CSS, JavaScript);
+- Experience in using software development tools (Visual Studio Code), Git skills.
+
+***
+
+## Code example:
+
+```
+function isPalindrom(str) {
+	let resultStr = str;
+	for (let i = 0; i <= resultStr.length / 2; i++) {
+
+		if (resultStr[i] === resultStr[(resultStr.length - 1) - i]) {
+			continue;
+		}
+		return 'not palindrom';
+	}
+	return 'palindrom';
+}
+
+const string = 'кобан упал и лапу набок';
+
+console.log(isPalindrom(string));
+```
+
+***
