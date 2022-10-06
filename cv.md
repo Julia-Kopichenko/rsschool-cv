@@ -44,3 +44,25 @@ console.log(isPalindrom(string));
 ```
 
 ***
+## Experience:
+
+**Courses Software engenering laboratory "Senla"**
+
+Course basic knowledge of  HTML, CSS, JavaScript, React)
+
+***
+## Education:
+ - **University:** Sukhoi State Technical University of Homel
+
+    Industrial Heat Power Engineering
+
+ - **Courses** Software engenering laboratory "Senla" (2021)
+
+    Course basic knowledge of  HTML, CSS, JavaScript, React)
+
+***
+## English:
+
+Intermediate
+
+***
