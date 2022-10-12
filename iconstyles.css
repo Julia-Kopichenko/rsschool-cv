@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('./fonts/icons.eot?880noi');
+  src:  url('./fonts/icons.eot?880noi#iefix') format('embedded-opentype'),
+    url('./fonts/icons.ttf?880noi') format('truetype'),
+    url('./fonts/icons.woff?880noi') format('woff'),
+    url('./fonts/icons.svg?880noi#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  /* text-transform: none; */
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rs_school_logo .path1:before {
+  content: "\e905";
+  color: rgb(0, 0, 0);
+}
+.icon-rs_school_logo .path2:before {
+  content: "\e906";
+  margin-left: -1.7861328125em;
+  color: rgb(0, 0, 0);
+}
+.icon-rs_school_logo .path3:before {
+  content: "\e907";
+  margin-left: -1.7861328125em;
+  color: rgb(0, 0, 0);
+}
+.icon-rs_school_logo .path4:before {
+  content: "\e908";
+  margin-left: -1.7861328125em;
+  color: rgb(0, 0, 0);
+}
+.icon-rs_school_logo .path5:before {
+  content: "\e909";
+  margin-left: -1.7861328125em;
+  color: rgb(255, 255, 255);
+}
+.icon-rs_school_logo .path6:before {
+  content: "\e90a";
+  margin-left: -1.7861328125em;
+  /* color: none; */
+}
+.icon-rs_school_logo .path7:before {
+  content: "\e90b";
+  margin-left: -1.7861328125em;
+  color: rgb(0, 0, 0);
+}
+.icon-facebook:before {
+  content: "\e90c";
+}
+.icon-github:before {
+  content: "\e90d";
+}
+.icon-linkedIn:before {
+  content: "\e90e";
+}
+.icon-mail_ru:before {
+  content: "\e90f";
+}
+.icon-phone:before {
+  content: "\e910";
+}
+.icon-telegram:before {
+  content: "\e911";
+}
+.icon-world:before {
+  content: "\e912";
+}
+.icon-bike:before {
+  content: "\e900";
+}
+.icon-guitar:before {
+  content: "\e901";
+}
+.icon-hiking:before {
+  content: "\e902";
+}
+.icon-listening:before {
+  content: "\e903";
+}
+.icon-travel:before {
+  content: "\e904";
+}
