@@ -178,7 +178,12 @@ table {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
+/* a img{
+  text-decoration: none;
+  cursor: pointer;
+} */
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -322,6 +327,10 @@ body.lock {
 }
 .icon:active {
   color: var(--color-lite-blue);
+}
+.icon-world,
+.icon-phone {
+  font-size: var(--icons-height);
 }
 /**--------------------HEADER END----------------*/
 /**--------------------ABOUT ME START------------*/
@@ -535,12 +544,15 @@ section {
 }
 .contacts__item {
   display: flex;
-  align-items: center;
-  margin-right: 20px;
 }
-.contacts__item .icon {
+.contacts__item span {
+  font-size: var(--font-size-normal);
+  margin-left: 1rem;
+}
+.contacts__item:nth-last-of-type() {
   margin-right: 2rem;
 }
+
 /**--------------------CONTACTS END------------*/
 /**--------------------FOOTER START------------*/
 .footer__wrapper {
