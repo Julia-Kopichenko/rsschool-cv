@@ -1,1 +1,1 @@
-https://Julia-Kopichenko.github.io/rsschool-cv/cv
+Just take a look at [my CV](https://julia-kopichenko.github.io/rsschool-cv/)!
